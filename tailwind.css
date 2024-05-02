@@ -1,0 +1,59 @@
+/* Importing external fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Poppins:ital,wght@0,700;1,300&family=Sacramento&display=swap');
+
+/* Including Tailwind CSS base styles */
+@tailwind base;
+
+/* Including Tailwind CSS component styles */
+@tailwind components;
+
+/* Including Tailwind CSS utility classes */
+@tailwind utilities;
+
+/* Comments explaining the usage of custom CSS */
+
+/* 
+   Use the `@layer base` directive to add base styles
+   These styles will be applied globally
+   Example: Setting the font family for the entire document
+*/
+/* @layer base {
+    body {
+        font-family: Sacramento;  Using the Sacramento font for the body 
+    }
+} */
+
+/* 
+   You can use `@layer components` to add styles for specific components
+   These styles will be scoped to the respective components
+   Example: Customizing button styles
+*/
+@layer components {
+    .btn {
+        /* Custom button styles */
+          
+            /* You can add more styles here */
+          }
+    }
+
+/* 
+   You can use `@layer utilities` to add utility classes
+   These classes will be available globally
+   Example: Adding custom utility classes
+*/
+@layer utilities {
+    .custom-margin {
+        margin-top: 2rem; /* Example of a custom utility class for margin */
+    }
+}
+
+
+.custom-button {
+    @apply  bg-center ;
+    background-image: url('/layouts/images/button.png');
+}
+
+.hero {
+    @apply  bg-cover;
+    background-image: url('/layouts/images/bg.jpg');
+}
