@@ -10,8 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "npx tailwindcss -i ./tailwind.css -o ./layouts/output.css --watch",
-    "production": "npx tailwindcss -i ./tailwind.css -o ./layouts/output.css --minify"
+    "dev": "npx tailwindcss -i ./tailwind.css -o ./output.css --watch",
+    "production": "npx tailwindcss -i ./tailwind.css -o ./output.css --minify"
   },
   "keywords": [],
   "author": "",
