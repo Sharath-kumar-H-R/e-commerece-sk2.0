@@ -58,5 +58,11 @@
     background-image: url('/images/bg.jpg');
 }
 .bg-right-40 {
-    background-position: calc(100% + 280px) center;
+    background-position: calc(100% + 330px) center;
+    
+  }
+  
+.push-left {
+    background-position: calc(100% - 800px) center;
+    
   }

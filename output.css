@@ -562,6 +562,10 @@ video {
 
 /* Including Tailwind CSS utility classes */
 
+.visible{
+  visibility: visible;
+}
+
 .absolute{
   position: absolute;
 }
@@ -698,6 +702,14 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.ml-32{
+  margin-left: 8rem;
+}
+
+.ml-3{
+  margin-left: 0.75rem;
 }
 
 .flex{
@@ -997,6 +1009,10 @@ video {
   padding: 1rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .p-6{
   padding: 1.5rem;
 }
@@ -1151,6 +1167,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-gray-300{
   --tw-shadow-color: #d1d5db;
   --tw-shadow: var(--tw-shadow-colored);
@@ -1202,7 +1224,11 @@ video {
 }
 
 .bg-right-40 {
-  background-position: calc(100% + 280px) center;
+  background-position: calc(100% + 330px) center;
+}
+
+.push-left {
+  background-position: calc(100% - 800px) center;
 }
 
 .hover\:bg-teal-900:hover{
@@ -1242,6 +1268,10 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:hidden{
+    display: none;
+  }
+
   .sm\:shadow{
     --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -1255,72 +1285,16 @@ video {
     margin-bottom: 1.5rem;
   }
 
-  .md\:mb-32{
-    margin-bottom: 8rem;
-  }
-
-  .md\:ml-12{
-    margin-left: 3rem;
-  }
-
-  .md\:ml-14{
-    margin-left: 3.5rem;
+  .md\:ml-10{
+    margin-left: 2.5rem;
   }
 
   .md\:ml-20{
     margin-left: 5rem;
   }
 
-  .md\:ml-52{
-    margin-left: 13rem;
-  }
-
   .md\:mt-11{
     margin-top: 2.75rem;
-  }
-
-  .md\:mt-16{
-    margin-top: 4rem;
-  }
-
-  .md\:mt-20{
-    margin-top: 5rem;
-  }
-
-  .md\:mt-32{
-    margin-top: 8rem;
-  }
-
-  .md\:mt-36{
-    margin-top: 9rem;
-  }
-
-  .md\:mt-40{
-    margin-top: 10rem;
-  }
-
-  .md\:ml-8{
-    margin-left: 2rem;
-  }
-
-  .md\:ml-10{
-    margin-left: 2.5rem;
-  }
-
-  .md\:ml-5{
-    margin-left: 1.25rem;
-  }
-
-  .md\:ml-2{
-    margin-left: 0.5rem;
-  }
-
-  .md\:mt-8{
-    margin-top: 2rem;
-  }
-
-  .md\:mt-1{
-    margin-top: 0.25rem;
   }
 
   .md\:mt-14{
@@ -1331,108 +1305,84 @@ video {
     margin-top: 0.5rem;
   }
 
-  .md\:mt-10{
-    margin-top: 2.5rem;
+  .md\:mt-24{
+    margin-top: 6rem;
+  }
+
+  .md\:mt-32{
+    margin-top: 8rem;
   }
 
   .md\:mt-4{
     margin-top: 1rem;
   }
 
-  .md\:mt-28{
-    margin-top: 7rem;
+  .md\:mt-40{
+    margin-top: 10rem;
   }
 
-  .md\:mt-24{
-    margin-top: 6rem;
+  .md\:ml-4{
+    margin-left: 1rem;
   }
 
-  .md\:mb-2{
-    margin-bottom: 0.5rem;
+  .md\:ml-48{
+    margin-left: 12rem;
   }
 
-  .md\:mb-20{
-    margin-bottom: 5rem;
+  .md\:ml-56{
+    margin-left: 14rem;
   }
 
-  .md\:mb-10{
-    margin-bottom: 2.5rem;
+  .md\:ml-6{
+    margin-left: 1.5rem;
+  }
+
+  .md\:ml-64{
+    margin-left: 16rem;
+  }
+
+  .md\:ml-\[\]{
+    margin-left: ;
+  }
+
+  .md\:ml-\[200px\]{
+    margin-left: 200px;
+  }
+
+  .md\:ml-\[400px\]{
+    margin-left: 400px;
+  }
+
+  .md\:ml-\[500px\]{
+    margin-left: 500px;
+  }
+
+  .md\:block{
+    display: block;
   }
 
   .md\:flex{
     display: flex;
   }
 
-  .md\:grid{
-    display: grid;
-  }
-
   .md\:hidden{
     display: none;
-  }
-
-  .md\:h-96{
-    height: 24rem;
-  }
-
-  .md\:h-8{
-    height: 2rem;
-  }
-
-  .md\:h-80{
-    height: 20rem;
   }
 
   .md\:h-60{
     height: 15rem;
   }
 
-  .md\:w-1\/3{
-    width: 33.333333%;
-  }
-
-  .md\:w-60{
-    width: 15rem;
-  }
-
-  .md\:w-\[400px\]{
-    width: 400px;
-  }
-
-  .md\:w-\[300px\]{
-    width: 300px;
-  }
-
-  .md\:w-\[00px\]{
-    width: 00px;
-  }
-
-  .md\:w-\[350px\]{
-    width: 350px;
-  }
-
-  .md\:w-5{
-    width: 1.25rem;
+  .md\:h-80{
+    height: 20rem;
   }
 
   .md\:w-52{
     width: 13rem;
   }
 
-  .md\:w-\[\]{
-    width: ;
-  }
-
-  .md\:w-\[1000\]{
-    width: 1000;
-  }
-
-  .md\:w-\[1000px\]{
-    width: 1000px;
-  }
-
-  .md\:grid-flow-col-dense{
-    grid-auto-flow: column dense;
+  .md\:w-\[350px\]{
+    width: 350px;
   }
 
   .md\:grid-cols-2{
@@ -1443,10 +1393,6 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:grid-rows-1{
-    grid-template-rows: repeat(1, minmax(0, 1fr));
-  }
-
   .md\:flex-col{
     flex-direction: column;
   }
@@ -1455,74 +1401,32 @@ video {
     flex-wrap: wrap;
   }
 
-  .md\:place-content-evenly{
-    place-content: space-evenly;
-  }
-
-  .md\:items-center{
-    align-items: center;
-  }
-
   .md\:justify-center{
     justify-content: center;
-  }
-
-  .md\:justify-between{
-    justify-content: space-between;
-  }
-
-  .md\:justify-evenly{
-    justify-content: space-evenly;
-  }
-
-  .md\:gap-8{
-    gap: 2rem;
-  }
-
-  .md\:gap-20{
-    gap: 5rem;
   }
 
   .md\:gap-10{
     gap: 2.5rem;
   }
 
-  .md\:gap-x-2{
-    -moz-column-gap: 0.5rem;
-         column-gap: 0.5rem;
-  }
-
-  .md\:gap-x-5{
-    -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
-  }
-
-  .md\:place-self-auto{
-    place-self: auto;
-  }
-
-  .md\:p-4{
-    padding: 1rem;
-  }
-
-  .md\:p-10{
-    padding: 2.5rem;
+  .md\:bg-\[url\(\'images\/tab-banner\.jpg\'\)\]{
+    background-image: url('images/tab-banner.jpg');
   }
 
   .md\:p-12{
     padding: 3rem;
   }
 
-  .md\:pt-20{
-    padding-top: 5rem;
-  }
-
-  .md\:pt-16{
-    padding-top: 4rem;
+  .md\:p-6{
+    padding: 1.5rem;
   }
 
   .md\:pt-10{
     padding-top: 2.5rem;
+  }
+
+  .md\:align-sub{
+    vertical-align: sub;
   }
 
   .md\:text-5xl{
@@ -1545,9 +1449,15 @@ video {
     line-height: 1.75rem;
   }
 
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  @media (min-width: 768px){
+    .md\:md\:text-5xl{
+      font-size: 3rem;
+      line-height: 1;
+    }
+  }
+
+  .md\:font-semibold{
+    font-weight: 600;
   }
 
   .md\:shadow{
@@ -1558,6 +1468,14 @@ video {
 }
 
 @media (min-width: 1024px){
+  .lg\:flex{
+    display: flex;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
