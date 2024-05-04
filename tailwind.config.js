@@ -95,7 +95,7 @@ module.exports = {
   purge: {
     // Specify content paths to be scanned for classes
     content: [
-      './layouts/*.html'
+      './*.html'
     ],
     // Exclude specific files or directories from being purged
     options: {

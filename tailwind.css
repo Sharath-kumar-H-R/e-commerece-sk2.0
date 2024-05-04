@@ -50,12 +50,12 @@
 
 .custom-button {
     @apply  bg-center bg-no-repeat;
-    background-image: url('/layouts/images/button.png');
+    background-image: url('/images/button.png');
 }
 
 .hero {
     @apply  bg-cover;
-    background-image: url('/layouts/images/bg.jpg');
+    background-image: url('/images/bg.jpg');
 }
 .bg-right-40 {
     background-position: calc(100% + 280px) center;
