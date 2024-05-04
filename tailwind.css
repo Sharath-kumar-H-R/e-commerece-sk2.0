@@ -1,6 +1,6 @@
 /* Importing external fonts from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Poppins:ital,wght@0,700;1,300&family=Sacramento&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Poppins:ital,wght@0,700;1,300&family=Sacramento&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* Including Tailwind CSS base styles */
 @tailwind base;
 

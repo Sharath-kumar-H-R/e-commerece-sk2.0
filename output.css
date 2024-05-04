@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Poppins:ital,wght@0,700;1,300&family=Sacramento&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* Importing external fonts from Google Fonts */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Poppins:ital,wght@0,700;1,300&family=Sacramento&display=swap'); */
 
 /* Including Tailwind CSS base styles */
 
@@ -704,14 +706,6 @@ video {
   margin-top: 2rem;
 }
 
-.ml-32{
-  margin-left: 8rem;
-}
-
-.ml-3{
-  margin-left: 0.75rem;
-}
-
 .flex{
   display: flex;
 }
@@ -804,6 +798,10 @@ video {
 
 .flex-shrink-0{
   flex-shrink: 0;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .auto-cols-auto{
@@ -1167,12 +1165,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-xl{
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-gray-300{
   --tw-shadow-color: #d1d5db;
   --tw-shadow: var(--tw-shadow-colored);
@@ -1268,10 +1260,6 @@ video {
 }
 
 @media (min-width: 640px){
-  .sm\:hidden{
-    display: none;
-  }
-
   .sm\:shadow{
     --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -1291,6 +1279,10 @@ video {
 
   .md\:ml-20{
     margin-left: 5rem;
+  }
+
+  .md\:ml-\[500px\]{
+    margin-left: 500px;
   }
 
   .md\:mt-11{
@@ -1319,42 +1311,6 @@ video {
 
   .md\:mt-40{
     margin-top: 10rem;
-  }
-
-  .md\:ml-4{
-    margin-left: 1rem;
-  }
-
-  .md\:ml-48{
-    margin-left: 12rem;
-  }
-
-  .md\:ml-56{
-    margin-left: 14rem;
-  }
-
-  .md\:ml-6{
-    margin-left: 1.5rem;
-  }
-
-  .md\:ml-64{
-    margin-left: 16rem;
-  }
-
-  .md\:ml-\[\]{
-    margin-left: ;
-  }
-
-  .md\:ml-\[200px\]{
-    margin-left: 200px;
-  }
-
-  .md\:ml-\[400px\]{
-    margin-left: 400px;
-  }
-
-  .md\:ml-\[500px\]{
-    margin-left: 500px;
   }
 
   .md\:block{
@@ -1425,10 +1381,6 @@ video {
     padding-top: 2.5rem;
   }
 
-  .md\:align-sub{
-    vertical-align: sub;
-  }
-
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -1449,25 +1401,28 @@ video {
     line-height: 1.75rem;
   }
 
-  @media (min-width: 768px){
-    .md\:md\:text-5xl{
-      font-size: 3rem;
-      line-height: 1;
-    }
-  }
-
   .md\:font-semibold{
     font-weight: 600;
-  }
-
-  .md\:shadow{
-    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
 
 @media (min-width: 1024px){
+  .lg\:ml-10{
+    margin-left: 2.5rem;
+  }
+
+  .lg\:ml-80{
+    margin-left: 20rem;
+  }
+
+  .lg\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .lg\:mt-16{
+    margin-top: 4rem;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -1478,5 +1433,26 @@ video {
 
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row{
+    flex-direction: row;
+  }
+
+  .lg\:justify-evenly{
+    justify-content: space-evenly;
+  }
+
+  .lg\:gap-x-32{
+    -moz-column-gap: 8rem;
+         column-gap: 8rem;
+  }
+
+  .lg\:bg-\[url\(\'images\/bg\.jpg\'\)\]{
+    background-image: url('images/bg.jpg');
+  }
+
+  .lg\:bg-cover{
+    background-size: cover;
   }
 }
