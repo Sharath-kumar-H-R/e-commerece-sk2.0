@@ -1299,6 +1299,34 @@ video {
     margin-top: 10rem;
   }
 
+  .md\:ml-8{
+    margin-left: 2rem;
+  }
+
+  .md\:ml-10{
+    margin-left: 2.5rem;
+  }
+
+  .md\:ml-5{
+    margin-left: 1.25rem;
+  }
+
+  .md\:ml-2{
+    margin-left: 0.5rem;
+  }
+
+  .md\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .md\:mt-1{
+    margin-top: 0.25rem;
+  }
+
+  .md\:mt-14{
+    margin-top: 3.5rem;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -1323,12 +1351,44 @@ video {
     width: 400px;
   }
 
+  .md\:grid-flow-col-dense{
+    grid-auto-flow: column dense;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-col{
     flex-direction: column;
+  }
+
+  .md\:flex-wrap{
+    flex-wrap: wrap;
+  }
+
+  .md\:place-content-evenly{
+    place-content: space-evenly;
+  }
+
+  .md\:items-center{
+    align-items: center;
+  }
+
+  .md\:justify-center{
+    justify-content: center;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
+  .md\:justify-evenly{
+    justify-content: space-evenly;
+  }
+
+  .md\:place-self-auto{
+    place-self: auto;
   }
 
   .md\:pt-20{
