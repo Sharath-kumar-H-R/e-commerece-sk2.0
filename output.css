@@ -1327,6 +1327,18 @@ video {
     margin-top: 3.5rem;
   }
 
+  .md\:mt-2{
+    margin-top: 0.5rem;
+  }
+
+  .md\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .md\:mt-4{
+    margin-top: 1rem;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -1349,6 +1361,26 @@ video {
 
   .md\:w-\[400px\]{
     width: 400px;
+  }
+
+  .md\:w-\[300px\]{
+    width: 300px;
+  }
+
+  .md\:w-\[00px\]{
+    width: 00px;
+  }
+
+  .md\:w-\[350px\]{
+    width: 350px;
+  }
+
+  .md\:w-5{
+    width: 1.25rem;
+  }
+
+  .md\:w-52{
+    width: 13rem;
   }
 
   .md\:grid-flow-col-dense{
