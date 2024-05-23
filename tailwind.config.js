@@ -1,13 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 
 // Importing the default Tailwind CSS theme for further extension
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   // Specifying content paths for Tailwind to scan for classes
   content: [
-    './layouts/*.html',
+    './*.html',
     './node_modules/@fortawesome/fontawesome-free/**/*.js',
+    // Add paths to all of the template files in your project
   ],
   theme: {
     // Extending the default theme with customizations
@@ -20,9 +21,9 @@ module.exports = {
         'serif': ['Georgia', ...defaultTheme.fontFamily.serif],
       },
       // Customizing colors
-      colors:{
+      colors: {
         // Adding a custom primary color
-        'primary':'#F1EAFF',
+        'primary': '#F1EAFF',
         // Example: Adding secondary colors
         'secondary': {
           '100': '#E6F1F2',
@@ -91,24 +92,6 @@ module.exports = {
     require('@tailwindcss/typography'),
     // You can add more plugins here (e.g., forms, aspect ratio, animations)
   ],
-  // Specifying content configuration for Tailwind CSS
-  purge: {
-    // Specify content paths to be scanned for classes
-    content: [
-      './*.html'
-    ],
-    // Exclude specific files or directories from being purged
-    options: {
-      // Specify whitelist patterns to prevent specific classes from being purged
-      whitelistPatterns: [],
-    },
-  },
-  // Configuring Preflight styles
-  preflight: {
-    // Customize the default styles reset or normalize applied by Tailwind
-  },
-  // Configuring responsive design
-  variants: {
-    // You can customize responsive variants here
-  },
-}
+  // Removing deprecated purge option (content is used instead)
+  // Specifying content configuration for Tailwind CSS is already done in `content`
+};

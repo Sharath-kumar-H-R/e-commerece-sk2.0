@@ -6,12 +6,18 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
     "@tailwindcss/typography": "^0.5.13",
+    "aos": "^2.3.4",
     "tailwindcss": "^3.4.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38"
+  },
   "scripts": {
     "dev": "npx tailwindcss -i ./tailwind.css -o ./output.css --watch",
-    "production": "npx tailwindcss -i ./tailwind.css -o ./output.css --minify"
+    "production": "npx tailwindcss -i ./tailwind.css -o ./output.css --minify",
+    "build:css": "npx postcss ./tailwind.css -o ./output.css"
   },
   "keywords": [],
   "author": "",

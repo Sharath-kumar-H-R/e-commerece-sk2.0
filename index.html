@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shree </title>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>  
   <link rel="stylesheet" href="output.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
 </head> 
-<body class="m-0 p-0">
-  <nav class="p-3 shadow-lg  bg-slate-100 ">
+<body class="m-0 p-0  scroll-smooth">
+  <nav class="p-2 shadow-lg  bg-white  sticky top-0 left-0 right-0 z-10">
     <div class="max-w-7xl mx-auto px-4 ">
       <div class="flex items-center justify-between h-16">
 <!-- Logo -->
@@ -20,18 +23,18 @@
 <!-- Cart Bag Icon (visible on medium and mobile screens) -->
 <a href="#" class="hidden ml-36 lg:hidden"><img src="images/shopping-bag.png" alt="" class="size-6"></a>
 <!-- Cart Bag Icon (visible on medium and mobile screens) -->
-<a href="#" class=" lg:hidden"><img src="images/shopping-bag.png" alt="" class="size-6 ml-36 md:ml-[500px]"></a>
+<a href="#" class=" lg:hidden"><img src="images/shopping-bag.png" alt="" class="size-6 ml-28 md:ml-[500px]"></a>
 <!-- Hamburger Menu Icon (visible on medium and mobile screens) -->
-<a href="#" class="mr-6 lg:hidden"><i class="fa fa-bars" aria-hidden="true" class="size-10"></i></a>
+<a href="#" class="mr-2  lg:hidden"><i class="fa fa-bars" aria-hidden="true" class="size-20"></i></a>
 
 <!-- Desktop Navigation Links (visible on large screens) -->
-<div class="hidden lg:flex font-semibold ">
+<div class="hidden lg:flex font-semibold mb-10 mt-8 p-2">
   <a href="#" class="hover:text-teal-800 px-3 py-2 hover:underline ease-in duration-200">Home</a>
   <a href="#" class="hover:text-teal-800 px-3 py-2 hover:underline ease-in duration-200">Shop</a>
   <a href="#" class="hover:text-teal-800 px-3 py-2 hover:underline ease-in duration-200">Blog</a>
   <a href="#" class="hover:text-teal-800 px-3 py-2 hover:underline ease-in duration-200">About</a>
   <a href="#" class="hover:text-teal-800 px-3 py-2 hover:underline ease-in duration-200">Contact</a>
-  <a href="#"><img src="images/shopping-bag.png" alt="" class="size-10 ml-8"></a>
+  <a href="#"><img src="images/shopping-bag.png" alt="" class="size-10 ml-8 "></a>
   <a href="#" class="md:hidden"><img src="images/shopping-bag.png" alt="" class="size-10 ml-8"></a>
 </div>
 
@@ -56,8 +59,8 @@
   <!-- nav end -->
 
   <!-- hero section begins -->
-  <section class="bg-[url('./images/mobile-Size-banner.png')] md:bg-[url('images/tab-banner.jpg')] md:push-left
-   md:bg-right-40 md:hero bg-cover bg-center  bg-no-repeat h-[100vh] lg:bg-[url('images/bg.jpg')] lg:bg-cover">
+  <section class="bg-[url('./images/mobile-Size-banner.png')] bg-right-40 md:bg-[url('images/tab-banner.jpg')] md:push-left
+   md:bg-right-40 md:hero bg-cover bg-center   bg-no-repeat h-[100vh] lg:bg-[url('images/bg.jpg')] lg:bg-center" data-aos="zoom-in" data-aos-duration="500">
     <div class="flex ">
         <div class="mt-20">
             <div class="text-pretty mt-16 ml-4  md:ml-20 md:mt-40">
@@ -68,8 +71,8 @@
                 </h1>
                 <p class="hidden md:block my-6">Save more with coupons & upto 75% off!</p>
                 <p class="my-6 md:hidden">Save more with coupons <br> & upto 75% off!</p>
-                <a href="#" class="custom-button text-teal-700 text-lg p-14">
-                    <button >Shop Now</button>
+                <a href="#" class="custom-button text-teal-700 text-lg p-14 ">
+                    <button class="animate-bounce">Shop Now</button>
                 </a>
             </div>
         </div>
@@ -77,7 +80,7 @@
 </section>
 <!-- hero section ends -->
 
-<section class="grid grid-cols-2 place-items-center p-5 md:grid-cols-3 md:p-6 lg:flex lg:justify-evenly">
+<section class="grid grid-cols-2 place-items-center p-5 md:grid-cols-3 md:p-6 lg:flex lg:justify-evenly" data-aos="fade-up"  data-aos-duration="3000">
 <div class="border border-teal-100 rounded-md h-40 w-40 mt-8 shadow-md hover:shadow-none">
     <img src="images/features/f1.png" alt="">
     <h4 class="text-center bg-red-200 mx-6 mt-4 rounded-md">Free shipping</h4>
@@ -112,10 +115,10 @@
 
 <!-- Featured Products section  -->
 <section class="mt-28 p-6 gap-12">
-  <h1 class="text-center text-gray-950 text-4xl font-semibold md:text-7xl">Featured Products</h1>
-  <p class="mt-4 mb-10 text-center text-lg text-teal-500">Summer Collection New Modern Design</p>
+  <h1 class="text-center text-gray-950 text-4xl font-semibold md:text-7xl" data-aos="fade-right" data-aos-duration="800">Featured Products</h1>
+  <p class="mt-4 mb-10 text-center text-lg text-teal-500"data-aos="fade-left" data-aos-duration="800">Summer Collection New Modern Design</p>
 
-  <div class="grid grid-cols-1 place-items-center md:grid-cols-2 md:p-12 md:gap-10 lg:grid-cols-4 gap-y-10">
+  <div class="grid grid-cols-1 place-items-center md:grid-cols-2 md:p-12 md:gap-10 lg:grid-cols-4 gap-y-10" data-aos="fade-up"  data-aos-duration="3000">
     <!-- Featured product card start -->
     <div class="border border-teal-400 rounded-2xl w-72 p-1 hover:shadow-2xl ease-in duration-200  shadow-gray-300 cursor-pointer">
       <div class="p-2"><img src="images/products/f1.jpg" alt="" class="rounded-xl"></div>
@@ -257,7 +260,7 @@
 </section>
 
 <!-- repair service banner begins  -->
-<section class="bg-[url('./images/banner/b2.jpg')] bg-no-repeat h-80 bg-cover mt-20 md:h-60">
+<section  class="bg-[url('./images/banner/b2.jpg')] bg-no-repeat h-80 bg-cover mt-20 md:h-60" data-aos="fade-up" data-aos-duration="2000">
 <div class="text-white text-center pt-8 md:pt-10">
   <h2 class="font-bold md:text-lg">Repair Services</h2>
   <h1 class="text-4xl mx-2 font-semibold mt-8 md:mt-4">Up to <span class="text-red-700">75% off</span> All T-shirts & Accessories</h1>
@@ -269,9 +272,9 @@
 
 <!-- new arrivals -->
 <section class="">
-<div class="mt-8 text-center"><h1 class="text-3xl font-semibold md:text-6xl">New Arrivals</h1><p class="mx-8 text-gray-800 text-xl mt-4">Summer Collection New Modern Design</p></div>
+<div data-aos="zoom-out-down" data-aos-duration="1000" class="mt-8 text-center"><h1 class="text-3xl font-semibold md:text-6xl">New Arrivals</h1><p class="mx-8 text-gray-800 text-xl mt-4">Summer Collection New Modern Design</p></div>
 
-<div class="grid place-items-center gap-y-10 mt-7 md:grid-cols-2 md:p-12 lg:grid-cols-4">
+<div data-aos="fade-up" data-aos-duration="1000" class="grid place-items-center gap-y-10 mt-7 md:grid-cols-2 md:p-12 lg:grid-cols-4">
 
   <div class="border border-teal-400 rounded-2xl w-72 p-1 hover:shadow-2xl ease-in duration-200  shadow-gray-300 cursor-pointer">
     <div class="p-2"><img src="images/products/n1.jpg" alt="" class="rounded-xl"></div>
@@ -413,10 +416,10 @@
 </section>
 <!-- new arrivals section ends -->
 
-<section class="h-3/5 mb-10">
+<section class="h-3/5 mb-10" >
 <div class="h-screen flex flex-col gap-2 mx-2 items-center mt-8 md:flex-col md:justify-center lg:flex-row lg:gap-x-32 ">
 
-<div class="relative group">
+<div class="relative group " data-aos="fade-down-right" data-aos-duration="2000">
   <img src="./images/banner/b17.jpg" alt="Image" class="w-[600px] h-[350px]">
   <div class="absolute inset-0 ml-6 mt-36 text-white ">
     <h2 class="text-2xl  font-light">Crazy deals</h2>
@@ -426,7 +429,7 @@
   </div>
 </div>
 
-<div class="relative group">
+<div class="relative group" data-aos="fade-down-left" data-aos-duration="2000">
   <img src="./images/banner/b10.jpg" alt="Image" class=" w-[600px] h-[350px]">
   <div class="absolute inset-0 ml-6 mt-36 text-white ">
     <h2 class="text-2xl  font-light">Spring/Summer</h2>
@@ -439,23 +442,23 @@
 </section>
 
 
-<section>
-<div class="grid grid-cols-1 place-items-center gap-5 p-6 md:grid-cols-3">
+<section data-aos="fade-down" data-aos-duration="3000">
+<div class="flex flex-col place-items-center gap-5 m-4 md:flex-row">
   <div class="relative"><img src="./images/banner/b7.jpg" alt=""  class=" w-[500px] md:h-80">
   <div class=" absolute inset-0 mt-16 md:mt-24 text-white antialiased ml-6">
-    <h2 class="text-3xl font-bold md:my-6">SEASONAL SALE</h2>
+    <h2 class="text-2xl font-bold md:my-6">SEASONAL SALE</h2>
   <h3 class="text-red-500 text-2xl font-semibold antialiased">Winter collection 50% off</h3>
   </div>
   </div>
   <div class="relative"><img src="./images/banner/b4.jpg" alt="" class=" md:h-80">
     <div class=" absolute inset-0 mt-10 md:mt-24 text-white antialiased ml-6" >
-      <h2 class="text-3xl font-bold md:my-6">NEW FOOTWEAR COLLECTION</h2>
+      <h2 class="text-lg font-bold md:my-6">NEW FOOTWEAR COLLECTION</h2>
     <h3 class="text-red-500 text-2xl font-semibold antialiased">Spring / Summer collection</h3>
     </div>
     </div>
     <div class="relative "><img src="./images/banner/b18.jpg" alt="" class=" md:h-80">
       <div class=" absolute inset-0 mt-6 md:mt-24 text-white antialiased ml-6" >
-        <h2 class="text-3xl font-bold my-6">T-SHIRTS</h2>
+        <h2 class="text-2xl font-bold my-6">T-SHIRTS</h2>
       <h3 class="text-red-500 text-2xl font-semibold antialiased">New Trendy Prints</h3>
       </div>
       </div>
@@ -463,16 +466,16 @@
 </section>
 
 <!-- news letter section begins -->
-<section class="bg-blue-950 h-52 bg-[url('./images/banner/b14.png')] md:mt-11">
-  <div class="flex flex-col lg:flex-row">
-    <div class="p-2 lg:mt-10 lg:ml-10"><h1 class="text-white text-3xl font-semibold md:ml-10 md:mt-2 shrink">Sign Up for Newsletter</h1><p class="text-gray-200 md:ml-10 mt-4">get E-mail updates about our latest shop and <span class="text-yellow-600">special offers</span></p></div>
-    <div class="p-4 md:mt-2 md:ml-10 lg:mt-16 lg:ml-80"><input type="email" placeholder="Enter Your mail Id" class="rounded-l-md p-4 md:w-[350px]"><button class="bg-teal-800 text-white md:w-52 rounded-r-md p-4">Sign Up</button></div>
+<section class="bg-blue-950 h-52 bg-[url('./images/banner/b14.png')] md:mt-11" data-aos="fade-up" data-aos-duration="3000">
+  <div class="flex flex-col flex-nowrap p-4 lg:flex-row">
+    <div class="p-2 lg:mt-10 lg:ml-10"><h1 class="text-white text-2xl font-semibold md:ml-10 md:mt-2 ">Sign Up for Newsletter</h1><p class="text-gray-500 font-semibold md:ml-10 mt-4">get E-mail updates about our latest shop and <span class="text-yellow-600">special offers</span></p></div>
+    <div class="shrink-0 md:mt-2 md:ml-10 lg:mt-16 lg:ml-80"><input type="email" placeholder="Enter Your mail Id" class="rounded-l-md p-4 w-40 md:w-[350px] animate-pulse"><button class="bg-teal-800 text-white md:w-52 rounded-r-md p-4">Sign Up</button></div>
   </div>
 </section>
 <!-- news letter section ends -->
 
 
-<footer>
+<footer data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-duration="4000">
   <div class="grid auto-cols-auto ml-2 gap-y-10 md:flex md:flex-wrap md:ml-10 lg:justify-evenly">
     <div>
       <img src="images/logo2.png" alt="" class="w-24 h-32">
@@ -517,6 +520,11 @@
   </div>
   <p class="text-center mt-4 mb-24 md:mt-14"><i class="fa fa-copyright" aria-hidden="true"></i> 2023 SharathKumar@Tthl</p>
 </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init();
+  });
+</script>
 
 </body>
 </html>
